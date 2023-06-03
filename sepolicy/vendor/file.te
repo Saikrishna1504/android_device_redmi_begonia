@@ -2,15 +2,12 @@
 type fingerprint_data_file, file_type, data_file_type, core_data_file_type;
 type vendor_fingerprint_data_file, file_type, data_file_type;
 
-<<<<<<< HEAD
 # Last kernel
 type proc_last_kmsg, fs_type, proc_type;
 
 # Graphics
 type sysfs_mali, fs_type, sysfs_type;
 
-=======
->>>>>>> f1dc914 (begonia: sepolicy: Update gpu related sysfs labels)
 # Latency
 type latency_device, dev_type;
 
