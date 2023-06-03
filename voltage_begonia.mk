@@ -15,18 +15,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from begonia device
 $(call inherit-product, device/redmi/begonia/device.mk)
 
-# Inherit some common Bananadroid stuff
-$(call inherit-product, vendor/banana/config/common.mk)
+# Inherit some common VoltageOS stuff
+$(call inherit-product, vendor/voltage/config/common.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DOESNT_LIKE_FLIPENDO := true
 
 # Inherit some extras stuff
 $(call inherit-product-if-exists, vendor/extras/extras.mk)
 
-# Banana flags
-BANANA_MAINTAINER := Saikrishna
-BANANA_BUILD_TYPE := UNOFFICIAL
-WITH_GAPPS := true
+# Official-ify
+VOLTAGE_BUILD_TYPE := OFFICIAL
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -38,7 +36,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := begonia
-PRODUCT_NAME := banana_begonia
+PRODUCT_NAME := voltage_begonia
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 8 Pro
 PRODUCT_MANUFACTURER := Xiaomi
